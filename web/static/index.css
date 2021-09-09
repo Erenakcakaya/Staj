@@ -1,0 +1,421 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: 'Urbanist', sans-serif;
+
+}
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: #141a35;
+    height: 1100px;
+
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: top .5s;
+    background-color: #0e1224;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+.menu{
+    width: 25px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: left;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#e2e2e2;
+    font-size: 15px;
+}
+
+nav ul li a:hover{
+    color: #c2c0c0;
+}
+
+nav ul li font u a{
+    text-decoration: none;
+    color:#e2e2e2;
+    font-size: 15px;
+}
+
+.bus{
+    color: #366e9d;
+
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px 0;
+
+}
+.info{
+    font-size: 70px;
+    line-height: 0.1;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 220px;
+}
+
+.info a:link{
+    color: #b4b8f9;
+}
+
+.info a:visited{
+    color: #ffcd3f;;
+}
+
+.info .python:hover{
+    color: #a88625;
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.info .python{
+    transition: 0.5s; 
+}
+
+.info .github:hover{
+    color: #a88625;
+    transition: all 0.5s;
+    transform: scale(1.1); 
+}
+.info .github{
+    transition: 0.5s; 
+}
+.image .logo2{
+    width: 400px;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 770px;
+}
+
+.image .logo2:hover{
+    transition: all 1.5s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.image .logo3{
+    width: 400px;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 1370px;
+}
+
+.image .logo3:hover{
+    transition: all 1.5s ease-in-out;
+    transform: rotate(360deg);
+}
+
+.text{
+    color: #000000;
+    font-size: 35px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.py_info{
+    margin-top: -60px;
+    height: 1000px;
+    background-color: #cc4037;
+}
+.h1classpy{
+    color: #4c0d09;
+    font-size: 90px;
+    font-family: 'Allison', cursive;
+}
+
+.monty{
+    position: absolute;
+    margin-top: 50px;
+    z-index: 1;
+    margin-left: 90px;
+}
+
+.montytxt{
+    color: #4c0d09;
+    position: absolute;
+    z-index: 2;
+    font-size: 90px;
+    font-family: 'Allison', cursive;
+    margin-top: 250px;
+    margin-left: 250px;
+    transform: rotate(-25deg)
+}
+
+.montyword{
+    position: absolute;
+    font-size: 80px;
+    font-family: 'Allison', cursive;
+    margin-top: 400px;
+    margin-left: 620px;
+}
+
+
+.py_info2{
+    margin-top: -61px;
+    height: 900px;
+    background-color: #ffc19f;
+}
+
+.h1classpy2{
+    color: #cc4037;
+    font-size: 90px;
+    font-family: 'Allison', cursive;
+}
+
+.c_code{
+    background-color: black;
+    position: absolute;
+    font-size: 50px;
+    right: 650px;
+    padding: 5px 15px;
+    border-radius: 25px 25px;
+    color: white;
+    transition: 0.5s;
+}
+
+.c_code:hover{
+    font-size: 52px;
+    transition: all 0.5s;
+    transform: scale(1.1);
+    border-radius: 30px 30px;
+    color: rgb(194, 149, 235);
+    cursor: crosshair;
+}
+
+.computer{
+    width: 20%;
+    position: absolute;
+    margin-left: -950px;
+    margin-top: -30px;
+}
+
+.py_info3{
+    margin-top: -61px;
+    height: 900px;
+    background-color: #4c0d09;
+}
+
+.h1classpy3{
+    color: #d3b2af;
+    font-size: 90px;
+    font-family: 'Allison', cursive;
+}
+
+.text2{
+    color: #d3b2af;
+    font-size: 35px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.c_code2{
+    background-color: black;
+    position: absolute;
+    font-size: 50px;
+    right: 1350px;
+    padding: 5px 15px;
+    border-radius: 25px 25px;
+    color: white;
+    transition: 0.5s;
+}
+.c_code2:hover{
+    font-size: 52px;
+    transition: all 0.5s;
+    transform: scale(1.1);
+    border-radius: 30px 30px;
+    color: rgb(194, 149, 235);
+    cursor: crosshair;
+}
+
+.c_code3{
+    background-color: black;
+    position: absolute;
+    font-size: 50px;
+    right: 1350px;
+    bottom: -2500px;
+    padding: 5px 15px;
+    border-radius: 25px 25px;
+    color: white;
+    transition: 0.5s;
+}
+.c_code3:hover{
+    font-size: 52px;
+    transition: all 0.5s;
+    transform: scale(1.1);
+    border-radius: 30px 30px;
+    color: rgb(194, 149, 235);
+    cursor: crosshair;
+}
+
+.c_code4{
+    background-color: black;
+    position: absolute;
+    font-size: 50px;
+    right: 820px;
+    bottom: -2500px;
+    padding: 5px 15px;
+    border-radius: 25px 25px;
+    color: white;
+    transition: 0.5s;
+}
+.c_code4:hover{
+    font-size: 52px;
+    transition: all 0.5s;
+    transform: scale(1.1);
+    border-radius: 30px 30px;
+    color: rgb(194, 149, 235);
+    cursor: crosshair;
+}
+
+.c_code5{
+    background-color: black;
+    position: absolute;
+    font-size: 50px;
+    right: 300px;
+    bottom: -2500px;
+    padding: 5px 15px;
+    border-radius: 25px 25px;
+    color: white;
+    transition: 0.5s;
+}
+.c_code5:hover{
+    font-size: 52px;
+    transition: all 0.5s;
+    transform: scale(1.1);
+    border-radius: 30px 30px;
+    color: rgb(194, 149, 235);
+    cursor: crosshair;
+}
+.c_code6{
+    background-color: black;
+    position: absolute;
+    font-size: 50px;
+    right: 820px;
+    padding: 5px 15px;
+    border-radius: 25px 25px;
+    color: white;
+    transition: 0.5s;
+}
+.c_code6:hover{
+    font-size: 52px;
+    transition: all 0.5s;
+    transform: scale(1.1);
+    border-radius: 30px 30px;
+    color: rgb(194, 149, 235);
+    cursor: crosshair;
+}
+.c_code7{
+    background-color: black;
+    position: absolute;
+    font-size: 50px;
+    right: 300px;
+    padding: 5px 15px;
+    border-radius: 25px 25px;
+    color: white;
+    transition: 0.5s;
+}
+.c_code7:hover{
+    font-size: 52px;
+    transition: all 0.5s;
+    transform: scale(1.1);
+    border-radius: 30px 30px;
+    color: rgb(194, 149, 235);
+    cursor: crosshair;
+}
+
+.git_info{
+    margin-top: -61px;
+    height: 1000px;
+    background-color: black;
+}
+
+.h1classgit{
+    color: white;
+    font-size: 90px;
+    font-family: 'Allison', cursive;
+}
+
+.text3{
+    color: white;
+    font-size: 35px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.localimage{
+    width: 50%;
+}
+
+.git_info2{
+    margin-top: -61px;
+    height: 600px;
+}
+
+.h1classgit2{
+    color: black;
+    font-size: 90px;
+    font-family: 'Allison', cursive;
+}
+
+.text4{
+    color: black;
+    font-size: 35px;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.linkclass:link{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+.linkclass:visited{
+    color: rgb(255, 0, 0);
+}
+
+.important{
+    color:black;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 120px;
+    margin-left: 500px;
+}
+
+.contact{
+    background-color: gray;
+    margin-top: -61px;
+    height: 300px;
+}
+
+.text5{
+    color: #000000;
+    font-size: 35px;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    padding: 50px;
+    margin-left: 700px;
+    text-align: right;
+}

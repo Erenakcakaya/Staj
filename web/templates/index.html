@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
+        <title>Ödev</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div id="AnaSayfa" class="container">
+                <div class="navbar">
+                    <a target="block" href="http://emyo.ankara.edu.tr"><img
+                            src="{{ url_for('static', filename='images/logo.png')}}" class="logo"></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#AnaSayfa">Anasayfa</a></li>
+                            <li><a href="#PythonNedir">Python Nedir?</a></li>
+                            <li><a href="#GitNedir">Github Nedir?</a></li>
+                            <li><a href="#last">İletişim</a></li>
+                        </ul>
+                    </nav>
+                    <img src="{{ url_for('static', filename='images/menu.png')}}" class="menu">
+                </div>
+                <div class="row">
+                    <div class="info">
+                        <h3 class="bus">Bu sayfada</h3>
+                        <a href="https://www.python.org" target="block">
+                            <h1 class="python">Python</h1>
+                        </a>
+                        <p class="bus">ve</p>
+                        <a href="https://github.com" target="block">
+                            <h1 class="github">Github</h1>
+                        </a>
+                        <h3 class="bus">anlatılacaktır.</h3>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img src="{{ url_for('static', filename='images/python_logo.png')}}" class="logo2">
+                    <img src="{{ url_for('static', filename='images/github_logo.png')}}" class="logo3">
+                </div>
+                <p class="important">NOT: Bu site sadece tarayıcı tam ekran olduğu zaman düzgün görüntülenmesi için
+                    optimize edilmiştir.</p>
+            </div>
+        </header>
+
+        <main>
+            <div id="PythonNedir" class="py_info">
+                <center>
+                    <br>
+                    <h1 class="h1classpy">Nedir Bu Python? Yılan mı?</h1>
+                    <p class="text"><br> Python 90’lı yılların başında Amsterdam’da Guido
+                        Van Rossum tarafından geliştirilmeye başlanan bir programlama
+                        dilidir. Zannedilenin aksine ismini piton yılanından değil,
+                        Rossum’un çok sevdiği MonthyPython isimli komedi grubunun adından alır.</p>
+                </center>
+                <img src="{{ url_for('static', filename='images/MontyPython.png')}}" class="monty">
+                <p class="montytxt">MontyPython...</p>
+                <p class="montyword">They try it once then go to sleep just when you want to go again...</p>
+            </div>
+            <div class="py_info2">
+                <center>
+                    <h1 class="h1classpy2">Tam Olarak Ne İşimize Yarıyor?</h1>
+                    <p class="text">Python <b>nesne yönelimli</b>, yorumsal,modüler ve etkileşimli,
+                        yüksek seviyeli bir dildir. Programlama dilleri makine
+                        mantığı ile insan mantığı arasında köprüdür. Yani makine üzerinde
+                        daha hızlı çalışabilir.<br><br><br><br> ---Python ile bir çok işi daha az kod satırı
+                        ile halledebiliriz.---</p><br><br><code
+                        class="c_code">print("Hello World")</code><br><br><br><br>
+                    <center>
+                        <p class="text">Sadeliği ön planda tuttuğu için öğrenmesi diğer dillere göre daha kolay
+                            olabilir.
+                        </p>
+                    </center>
+                    <img src="{{ url_for('static', filename='images/computer_icon.png')}}" class="computer">
+                </center>
+            </div>
+            <div class="py_info3">
+                <center>
+                    <h1 class="h1classpy3">Python Kullanmalı Mıyım?</h1>
+                    <p class="text2">Evet! Python'u C, C++ gibi dillerden ayıran özelliği derlemeye gerek
+                        duymadan çalışabilmesidir. Biz buna <b> yorumsal dil adını veriyoruz</b>. Ayrıca Python
+                        içerisinde kullanmamızı bekleyen bir çok fonksiyon var ve bu bizi fonksiyon yazmaktan
+                        kurtarıyor.
+                    </p><code class="c_code2">print()</code>
+                    <code class="c_code3">input()</code>
+                    <code class="c_code4">range()</a></code>
+                    <code class="c_code5">float()</code>
+                    <code class="c_code6">ascii()</code>
+                    <code class="c_code7">bytes()</code>
+                </center>
+            </div>
+            <div id="GitNedir" class="git_info">
+                <center>
+                    <br>
+                    <h1 class="h1classgit">Github Nedir?</h1>
+                    <p class="text3">Git bir projenin bir çok kişi ile aynı anda
+                        yapılabilmesini sağlayan bir platformdur. Github ise
+                        projelerimizi sakladığımız depoya denir. Bu depo bir <b>uzak
+                            sunucudur</b> ve bu sunucuya erişip kendi projelerimizi
+                        atabiliriz. İstersek de başka projelere göz atabiliriz.</p><br><br>
+                    <p class="text3">Github'ın da içinde kendine ait kodlar
+                        (komutlar) olduğunu biliyor muydunuz?</p>
+                    <img src="{{ url_for('static', filename='images/local.png')}}" class="localimage">
+                </center>
+            </div>
+            <div class="git_info2">
+                <center>
+                    <h1 class="h1classgit2">Kısaca Github Komutları</h1>
+                    <p class="text4">Eğer Github komutlarını araştırmak isterseniz
+                        <a target="block" class="linkclass" href="https://www.atlassian.com/git/glossary">buraya</a>
+                        tıklayabilirsiniz.
+                    </p><br><br>
+                    <p class="text4">Şimdi burada Github komutlarının ne olduğunu
+                        konuşalım. Github komutları bize projelerimizi hızlı bir şekilde
+                        yönetme şansı verir. Bir projeyi gönderme, alma, yorum yazma, yedekleme
+                        gibi bir çok fonksiyonu içerisinde bulunduran Github bize kod yazarken
+                        büyük rahatlık sağlıyor ve zaman kazandırıyor.
+                    </p>
+                </center>
+            </div>
+        </main>
+
+        <footer>
+            <div id="last" class="contact">
+                <p class="text5">Email: akcakayaeren@outlook.com / 20330074@ogrenci.
+                    ankara.edu.tr <br> Muhammed Eren AKÇAKAYA
+                </p>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
